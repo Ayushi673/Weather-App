@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutterappp/pages/load_page.dart';
 
 class HomePage extends StatefulWidget {
   static String id= 'home_page';
@@ -28,13 +29,21 @@ class _HomePageState extends State<HomePage> {
       print(e);
     }
   }
+
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.teal.shade100,
-      child: RaisedButton(
-        onPressed: (){},
-        child: Text('LOG OUT'),
+      child: Scaffold(
+        body: Center(
+          child: PageView(
+            children: <Widget>[
+              LoadScreen(),
+            ],
+          ),
+        ),
       ),
     );
   }

@@ -67,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                   filled: true, //sets text-field box with a darker color
                   fillColor: Color(0xFFDEF2F1),
                   labelText: 'Password',
+                  hintText: 'atleast 6 characters long',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
