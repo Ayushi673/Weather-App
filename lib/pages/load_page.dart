@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterappp/pages/location_page.dart';
 import 'package:flutterappp/service/location.dart';
 import 'package:flutterappp/service/networking.dart';
-
-const apiKey = 'b1ffa68714134504f99d9a04ed3b0692';
+import 'package:flutterappp/service/confidencial.dart';
 
 class LoadScreen extends StatefulWidget {
   static String id= 'load_page';
